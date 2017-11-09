@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    android:padding="15dp"
+    tools:context="com.garrettchestnut.flingfirebase.SetUp">
+
+    <LinearLayout
+        android:id="@+id/PH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="textPersonName"
+            android:textColor="#b0b0b0"
+            android:textColorHint="#b0b0b0"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/PH"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/fbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FACEBOOK PAGE"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/fb_page"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Facebook link"
+            android:inputType="textPersonName"
+            android:textColor="#b0b0b0"
+            android:textColorHint="#b0b0b0"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FB"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/liText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FB"
+            android:text="LINKEDIN"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/linkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/liText"
+            android:ems="10"
+            android:hint="LinkedIn page"
+            android:inputType="textPersonName"
+            android:textColor="#b0b0b0"
+            android:textColorHint="#b0b0b0"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LI"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/webText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FB"
+            android:text="PERSONAL/PROFESSIONAL WEBSITE"
+            android:textColor="#26DBFF"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/webLink"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/liText"
+            android:ems="10"
+            android:hint="Website link (Do not include 'http//:')"
+            android:inputType="textPersonName"
+            android:textColor="#17B4D4"
+            android:textColorHint="#17B4D4"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/WEB"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/resText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FB"
+            android:text="LINK TO RESUME"
+            android:textColor="#3d88ff"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/resLink"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/liText"
+            android:ems="10"
+            android:hint="Link to resume/CSV (e.g. Google Docs Link)"
+            android:inputType="textPersonName"
+            android:textColor="#1656bc"
+            android:textColorHint="#1656bc"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RES"
+        android:background="@drawable/uploadbutton"
+        android:onClick="onClickBC"
+        android:text="Upload Digital Business Card (JPEG, PNG)"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/statement"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/upload"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/personalbutton"
+        android:onClick="getStatement"
+        android:text="Create/Edit Personal Statement"
+        android:textColor="#17B4D4"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statement"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@drawable/savebutton"
+            android:elevation="1dp"
+            android:onClick="save"
+            android:text="Save"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+</RelativeLayout>

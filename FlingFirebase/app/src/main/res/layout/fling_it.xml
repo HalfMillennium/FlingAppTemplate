@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b">
+
+    <TextView
+        android:id="@+id/stateTitle"
+        android:layout_width="226dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="408dp"
+        android:text="PERSONAL STATEMENT"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="332dp"
+        android:layout_height="416dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintVertical_bias="0.103"
+        android:id="@+id/constraintLayout">
+
+        <ToggleButton
+            android:id="@+id/bc_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/busTitle"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/web_inc"/>
+
+        <ToggleButton
+            android:id="@+id/li_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toRightOf="@+id/linkedInTitle"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/bc_inc"/>
+
+        <TextView
+            android:id="@+id/linkedInTitle"
+            android:layout_width="218dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="178dp"
+            android:text="LINKEDIN"
+            android:textColor="#ffffff"
+            android:textSize="43sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/faceTitle"
+            android:layout_width="218dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="107dp"
+            android:text="FACEBOOK"
+            android:textColor="#ffffff"
+            android:textSize="43sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ToggleButton
+            android:id="@+id/fb_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toRightOf="@+id/faceTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/li_inc"/>
+
+        <TextView
+            android:id="@+id/busTitle"
+            android:layout_width="231dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="250dp"
+            android:text="BUSINESS CARD"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/resTitle"
+            android:layout_width="218dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="43dp"
+            android:text="RESUME"
+            android:textColor="#ffffff"
+            android:textSize="43sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/webTitle"
+            android:layout_width="218dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="307dp"
+            android:text="WEBSITE"
+            android:textColor="#ffffff"
+            android:textSize="43sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ToggleButton
+            android:id="@+id/res_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toTopOf="@+id/fb_inc"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/resTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875"/>
+
+        <ToggleButton
+            android:id="@+id/web_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/webTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/webTitle"/>
+
+        <ToggleButton
+            android:id="@+id/ps_inc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/select_def"
+            android:paddingBottom="15dp"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/webTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/web_inc"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/target"
+        android:layout_width="418dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:hint="Enter target handle/username"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        />
+
+    <Button
+        android:id="@+id/fling"
+        android:layout_width="346dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/flingbutton"
+        android:text="Launch"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/target"/>
+
+</android.support.constraint.ConstraintLayout>

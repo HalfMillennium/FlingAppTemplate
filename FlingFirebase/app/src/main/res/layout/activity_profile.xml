@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.parse.starter.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GARRETT"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/first_name"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="0dp"
+        android:text="CHESTNUT"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/last_name"
+        android:background="@android:color/black" />
+
+    <View
+        android:id="@+id/low_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/occupation"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="SOFTWARE DEVELOPER"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:layout_below="@+id/line"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/low_line"
+        android:layout_marginTop="13dp"
+        android:text="As a software developer, my main goal is to provide all of my clients with the highest quality programs, apps, and websites immaginable."
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statement"
+        android:layout_marginTop="28dp"
+        android:text="REACH ME BY PHONE @"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/emailTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL ME @"
+        android:textSize="18sp"
+        android:layout_below="@+id/phoneNum"
+        android:layout_alignEnd="@+id/last_name"/>
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emailTag"
+        android:text="glc2266@gmail.com"
+        android:textColor="#090909"
+        android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phoneText"
+            android:paddingBottom="5dp"
+            android:text="732-740-8380"
+            android:textColor="#090909"
+            android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/li_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fb_tag"
+        android:text="LINKEDIN:  "
+        android:textColor="#FF004A6E"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/fb_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emailView"
+        android:layout_marginTop="23dp"
+        android:text="FACEBOOK:  "
+        android:textColor="#0198E1"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/li_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/li_tag"
+        android:layout_below="@+id/fb_tag"
+        android:layout_toEndOf="@+id/li_tag"
+        android:gravity="center_vertical"
+        android:text="www.linkedin.com/me"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/fb_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/li_tag"
+        android:layout_alignTop="@+id/fb_tag"
+        android:layout_toEndOf="@+id/fb_tag"
+        android:gravity="center_vertical"
+        android:text="www.facebook.com/me"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/li_link"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/emailView"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/selRes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/profbuttonshape"
+            android:onClick="selRes"
+            android:text="R E S U M E"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/selBC"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/secondprofbuttonshape"
+            android:text="BUSINESS CARD"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

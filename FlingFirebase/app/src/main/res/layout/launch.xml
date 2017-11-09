@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000080"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ToggleButton
+        android:id="@+id/togBC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/togRES"
+        android:tag="bcB"
+        android:text="ToggleButton"
+        android:textOff="NO"
+        android:textOn="YES" />
+
+    <TextView
+        android:id="@+id/resCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="RESUME    "
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/togRES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bcCheck"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bcCheck"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="select"
+        android:tag="resB"
+        android:text="ToggleButton"
+        android:textOff="NO"
+        android:textOn="YES" />
+
+    <TextView
+        android:id="@+id/bcCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSINESS CARD"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/togBC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:id="@+id/togFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fbCheck"
+        android:layout_toLeftOf="@+id/togBC"
+        android:layout_toStartOf="@+id/togBC"
+        android:tag="fbB"
+        android:text="ToggleButton"
+        android:textOff="NO"
+        android:textOn="YES" />
+
+    <TextView
+        android:id="@+id/fbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACEBOOK"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/liCheck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <ToggleButton
+        android:id="@+id/togLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/liCheck"
+        android:layout_toLeftOf="@+id/togBC"
+        android:layout_toStartOf="@+id/togBC"
+        android:tag="liB"
+        android:text="ToggleButton"
+        android:textOff="NO"
+        android:textOn="YES" />
+
+    <TextView
+        android:id="@+id/liCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bcCheck"
+        android:layout_marginTop="10dp"
+        android:text="LINKEDIN"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/at_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/liCheck"
+        android:layout_alignRight="@+id/liCheck"
+        android:layout_below="@+id/fbCheck"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:src="@drawable/ent_add" />
+
+    <EditText
+        android:id="@+id/target_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/at_symbol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:ems="10"
+        android:hint="Enter target handle"
+        android:inputType="textPersonName"
+        android:textColor="#ffcc0000"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/launch_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/at_symbol"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/launchshape"
+        android:onClick="launch"
+        android:text="L A U N C H"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+</RelativeLayout>
